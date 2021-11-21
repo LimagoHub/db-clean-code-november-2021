@@ -1,0 +1,27 @@
+
+`	java:S112L"FDefine and throw a dedicated exception instead of using a generic one.(áµßØüÿÿÿÿ
+`	java:S112]"FDefine and throw a dedicated exception instead of using a generic one.(áµßØüÿÿÿÿ
+M
+java:S1128"7Remove this unused import 'java.awt.HeadlessException'.(€ï›Ú
+K
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ
+S	java:S106("9Replace this use of System.out or System.err by a logger.(èÚÎ½üÿÿÿÿ
+l
+java:S3457-"Q%n should be used in place of \n to produce the platform-specific line separator.(›Ñ›¨şÿÿÿÿ
+S	java:S106-"9Replace this use of System.out or System.err by a logger.(›Ñ›¨şÿÿÿÿ
+E
+java:S6212C"/Declare this local variable with "var" instead.(ï–‘·
+J
+java:S6212D"/Declare this local variable with "var" instead.(ä¯£ùÿÿÿÿ
+J
+java:S6212G"/Declare this local variable with "var" instead.(‘“ûÿÿÿÿ
+J
+java:S6212H"/Declare this local variable with "var" instead.(Ò¼ËÑùÿÿÿÿ
+E
+java:S6212S"/Declare this local variable with "var" instead.(ï–‘·
+J
+java:S6212T"/Declare this local variable with "var" instead.(ä¯£ùÿÿÿÿ
+J
+java:S6212W"/Declare this local variable with "var" instead.(‘“ûÿÿÿÿ
+J
+java:S6212X"/Declare this local variable with "var" instead.(Ò¼ËÑùÿÿÿÿ
