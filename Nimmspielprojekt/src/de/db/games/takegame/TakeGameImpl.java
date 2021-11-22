@@ -8,16 +8,16 @@ public class TakeGameImpl implements Game {
 
     private final Scanner scanner = new Scanner(System.in);
     private int stones;
-    private boolean gameover;
+    private int turn;
 
     public TakeGameImpl() {
         stones = 23;
-        gameover = false;
+
     }
 
     @Override
     public void play() {
-        while( ! gameover)  executeTurns();
+        while( ! isGameover())  executeTurns();
 
     }
 
@@ -27,33 +27,42 @@ public class TakeGameImpl implements Game {
     }
 
     private void spielerzug() {
-        int turn;
+        if(isGameover()) return;
+
         while(true) {
             System.out.println(String.format("Es gibt %s Steine. Bitte nehmen Sie 1,2 oder 3!", stones));
             turn = scanner.nextInt();
             if( turn >= 1 && turn <=3) break;
             System.out.println("Ungueltiger Zug!");
         }
-        stones -=  turn;
+        terminateTurn("Human");
     }
     private void computerzug() {
+
+        if(isGameover()) return;
+
         final int turns [] = {3,1,1,2};
-        int turn;
-
-        if(stones < 1) {
-            System.out.println("Du Loser");
-            gameover = true;
-            return;
-        }
-
-        if(stones == 1) {
-            System.out.println("Du hast nur Glück gehabt");
-            gameover = true;
-            return;
-        }
-
         turn = turns[stones % 4];
         System.out.println(String.format("Computer nimmt %s Steine", turn));
-        stones -=  turn;
+        terminateTurn("Computer");
+    }
+
+    private void terminateTurn(String player) { // Integratiom
+        updateGameState();
+        checkLosing(player);
+    }
+
+    private void checkLosing(String player) { // Operatiom
+        if(isGameover()) {
+            System.out.println(String.format("%s hat verloren", player));
+        }
+    }
+
+    private void updateGameState() {
+        stones -= turn;
+    }
+
+    private boolean isGameover() {
+        return stones < 1;
     }
 }
