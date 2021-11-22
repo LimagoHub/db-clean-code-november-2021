@@ -1,7 +1,10 @@
 package de.db.games.takegame;
 
 import de.db.games.Game;
+import de.db.games.takegame.players.TakeGamePlayer;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class TakeGameImpl implements Game {
@@ -9,6 +12,14 @@ public class TakeGameImpl implements Game {
     private final Scanner scanner = new Scanner(System.in);
     private int stones;
     private int turn;
+    private List<TakeGamePlayer> players = new ArrayList<>();
+
+    public void addPlayer(TakeGamePlayer player) {
+        players.add(player);
+    }
+    public void removePlayer(TakeGamePlayer player) {
+        players.remove(player);
+    }
 
     public TakeGameImpl() {
         stones = 23;
@@ -22,52 +33,42 @@ public class TakeGameImpl implements Game {
     }
 
     private void executeTurns() {
-        spielerzug();
-        computerzug();
+        for (TakeGamePlayer player: players) {
+            executeSinglePlayerTurn(player);
+        }
     }
 
-    private void spielerzug() {
+    private void executeSinglePlayerTurn(TakeGamePlayer player) {
         if(isGameover()) return;
-        executeHumanTurn();
-        terminateTurn("Human");
+        executeTurn(player);
+        terminateTurn(player);
     }
 
-    private void executeHumanTurn() {
-        while (spielerzugIsInvalid()){
+    private void executeTurn(TakeGamePlayer player) {
+        while (playerImpl(player)){
             System.out.println("Ungueltiger Zug!");
         }
     }
 
-    private boolean spielerzugIsInvalid() {
-        spielerZugImpl();
+    private boolean playerImpl(TakeGamePlayer player) {
+        turn =  player.doTurn(stones);
         return ! isValid();
     }
 
 
 
-    private void spielerZugImpl() {
-        System.out.println(String.format("Es gibt %s Steine. Bitte nehmen Sie 1,2 oder 3", stones));
-        turn = scanner.nextInt();
-    }
 
-    private void computerzug() {
 
-        if(isGameover()) return;
 
-        final int turns [] = {3,1,1,2};
-        turn = turns[stones % 4];
-        System.out.println(String.format("Computer nimmt %s Steine", turn));
-        terminateTurn("Computer");
-    }
 
-    private void terminateTurn(String player) { // Integratiom
+    private void terminateTurn(TakeGamePlayer player) { // Integratiom
         updateGameState();
         checkLosing(player);
     }
 
-    private void checkLosing(String player) { // Operatiom
+    private void checkLosing(TakeGamePlayer player) { // Operatiom
         if(isGameover()) {
-            System.out.println(String.format("%s hat verloren", player));
+            System.out.println(String.format("%s hat verloren", player.getName()));
         }
     }
 
@@ -79,6 +80,6 @@ public class TakeGameImpl implements Game {
     }
 
     private boolean isGameover() {
-        return stones < 1;
+        return stones < 1 || players.isEmpty();
     }
 }
