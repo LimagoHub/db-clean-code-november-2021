@@ -28,15 +28,28 @@ public class TakeGameImpl implements Game {
 
     private void spielerzug() {
         if(isGameover()) return;
-
-        while(true) {
-            System.out.println(String.format("Es gibt %s Steine. Bitte nehmen Sie 1,2 oder 3!", stones));
-            turn = scanner.nextInt();
-            if( turn >= 1 && turn <=3) break;
-            System.out.println("Ungueltiger Zug!");
-        }
+        executeHumanTurn();
         terminateTurn("Human");
     }
+
+    private void executeHumanTurn() {
+        while (spielerzugIsInvalid()){
+            System.out.println("Ungueltiger Zug!");
+        }
+    }
+
+    private boolean spielerzugIsInvalid() {
+        spielerZugImpl();
+        return ! isValid();
+    }
+
+
+
+    private void spielerZugImpl() {
+        System.out.println(String.format("Es gibt %s Steine. Bitte nehmen Sie 1,2 oder 3", stones));
+        turn = scanner.nextInt();
+    }
+
     private void computerzug() {
 
         if(isGameover()) return;
@@ -58,6 +71,9 @@ public class TakeGameImpl implements Game {
         }
     }
 
+    private boolean isValid() {
+        return turn >= 1 && turn <= 3;
+    }
     private void updateGameState() {
         stones -= turn;
     }
