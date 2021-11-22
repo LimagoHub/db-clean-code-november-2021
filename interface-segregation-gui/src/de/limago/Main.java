@@ -10,19 +10,26 @@ public class Main extends Frame {
 
         setSize(300, 300);
         Button button = new Button("Drück mich");
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Taste wurde gedrückt");
+                beenden();
+            }
+        });
 
-        this.addWindowListener(new WindowAdapter() {
+        addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
                beenden();
             }
-
-
         });
+
         add(button);
     }
 
     private void beenden() {
+        // Speichern
         dispose();
     }
 
@@ -30,8 +37,6 @@ public class Main extends Frame {
 
         new Main().setVisible(true);
     }
-
-
 
 
 
