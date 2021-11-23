@@ -9,10 +9,15 @@ import java.util.Scanner;
 
 public class TakeGameImpl implements Game {
 
+    public static final String INVALID_TURN = "Ungueltiger Zug!";
+    public static final String GAME_OVER_MESSAGE = "%s hat verloren";
+
     private final Scanner scanner = new Scanner(System.in);
     private int stones;
     private int turn;
-    private List<TakeGamePlayer> players = new ArrayList<>();
+    private TakeGamePlayer currentPlayer;
+
+    private final List<TakeGamePlayer> players = new ArrayList<>();
 
     public void addPlayer(TakeGamePlayer player) {
         players.add(player);
@@ -29,42 +34,47 @@ public class TakeGameImpl implements Game {
     @Override
     public void play() {
         while( ! isGameover())  executeTurns();
-
     }
 
     private void executeTurns() {
         for (TakeGamePlayer player: players) {
-            executeSingleTurn(player);
+            executeTurnForPlayer(player);
         }
     }
 
-    private void executeSingleTurn(TakeGamePlayer player) {
+
+    private void executeTurnForPlayer(TakeGamePlayer player) {
+        currentPlayer = player;
+        executeSingleTurn();
+    }
+
+    private void executeSingleTurn() {
         if(isGameover()) return;
-        executeTurn(player);
-        terminateTurn(player);
+        executeTurn();
+        terminateTurn();
     }
 
-    private void executeTurn(TakeGamePlayer player) {
+    private void executeTurn() {
         do{
-            turn =  player.doTurn(stones);
+            turn =  currentPlayer.doTurn(stones);
         }
-        while (invalidTurn(player));
+        while (invalidTurn());
     }
 
-    private boolean invalidTurn(TakeGamePlayer player) {
+    private boolean invalidTurn() {
         if(isValid()) return false;
-        System.out.println("Ungueltiger Zug!");
+        print(INVALID_TURN);
         return true;
     }
 
-    private void terminateTurn(TakeGamePlayer player) { // Integratiom
+    private void terminateTurn() { // Integratiom
         updateGameState();
-        checkLosing(player);
+        checkLosing();
     }
 
-    private void checkLosing(TakeGamePlayer player) { // Operatiom
+    private void checkLosing() { // Operatiom
         if(isGameover()) {
-            System.out.println(String.format("%s hat verloren", player.getName()));
+            print(String.format(GAME_OVER_MESSAGE, currentPlayer.getName()));
         }
     }
 
@@ -77,5 +87,9 @@ public class TakeGameImpl implements Game {
 
     private boolean isGameover() {
         return stones < 1 || players.isEmpty();
+    }
+
+    private void print(String message) {
+        System.out.println(message);
     }
 }
