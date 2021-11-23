@@ -1,27 +1,28 @@
-package de.db.games.takegame.players;
+package de.db.games.players;
 
+import de.db.games.takegame.players.TakeGamePlayer;
 import de.db.io.ConsoleWriter;
 import de.db.io.Writer;
 
-public abstract class AbstractTakeGamePlayer implements TakeGamePlayer{
+public abstract class AbstractGamePlayer<Board, Turn> implements GamePlayer<Board,Turn> {
 
     private String name = this.getClass().getSimpleName();
     private Writer writer = new ConsoleWriter();
 
-    public AbstractTakeGamePlayer() {
+    public AbstractGamePlayer() {
 
     }
 
 
-    public AbstractTakeGamePlayer(String name) {
+    public AbstractGamePlayer(String name) {
         this.name = name;
     }
 
-    public AbstractTakeGamePlayer(Writer writer) {
+    public AbstractGamePlayer(Writer writer) {
         this.writer =writer;
     }
 
-    public AbstractTakeGamePlayer(Writer writer, String name) {
+    public AbstractGamePlayer(Writer writer, String name) {
         this.name = name;
         this.writer =writer;
     }

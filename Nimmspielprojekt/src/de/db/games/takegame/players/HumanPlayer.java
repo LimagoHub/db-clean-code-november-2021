@@ -1,5 +1,7 @@
 package de.db.games.takegame.players;
 
+import de.db.io.Writer;
+
 import java.util.Scanner;
 
 public class HumanPlayer extends AbstractTakeGamePlayer{
@@ -12,9 +14,17 @@ public class HumanPlayer extends AbstractTakeGamePlayer{
         super(name);
     }
 
+    public HumanPlayer(Writer writer) {
+        super(writer);
+    }
+
+    public HumanPlayer(Writer writer, String name) {
+        super(writer, name);
+    }
+
     @Override
     public int doTurn(int stones) {
-        System.out.println(String.format("Es gibt %s Steine. Bitte nehmen Sie 1,2 oder 3", stones));
+        getWriter().write(String.format("Es gibt %s Steine. Bitte nehmen Sie 1,2 oder 3", stones));
         return scanner.nextInt();
     }
 }

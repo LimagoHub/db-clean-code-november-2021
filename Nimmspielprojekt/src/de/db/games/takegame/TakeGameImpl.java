@@ -2,6 +2,7 @@ package de.db.games.takegame;
 
 import de.db.games.Game;
 import de.db.games.takegame.players.TakeGamePlayer;
+import de.db.io.Writer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,26 +10,14 @@ import java.util.Scanner;
 
 public class TakeGameImpl implements Game {
 
-    public static final String INVALID_TURN = "Ungueltiger Zug!";
-    public static final String GAME_OVER_MESSAGE = "%s hat verloren";
 
-    private final Scanner scanner = new Scanner(System.in);
-    private int stones;
-    private int turn;
-    private TakeGamePlayer currentPlayer;
 
-    private final List<TakeGamePlayer> players = new ArrayList<>();
 
-    public void addPlayer(TakeGamePlayer player) {
-        players.add(player);
-    }
-    public void removePlayer(TakeGamePlayer player) {
-        players.remove(player);
-    }
 
-    public TakeGameImpl() {
+
+    public TakeGameImpl(Writer writer) {
         stones = 23;
-
+        this.writer = writer;
     }
 
     @Override
@@ -85,11 +74,11 @@ public class TakeGameImpl implements Game {
         stones -= turn;
     }
 
-    private boolean isGameover() {
+    protected boolean isGameover() {
         return stones < 1 || players.isEmpty();
     }
 
     private void print(String message) {
-        System.out.println(message);
+        writer.write(message);
     }
 }
