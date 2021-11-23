@@ -34,32 +34,28 @@ public class TakeGameImpl implements Game {
 
     private void executeTurns() {
         for (TakeGamePlayer player: players) {
-            executeSinglePlayerTurn(player);
+            executeSingleTurn(player);
         }
     }
 
-    private void executeSinglePlayerTurn(TakeGamePlayer player) {
+    private void executeSingleTurn(TakeGamePlayer player) {
         if(isGameover()) return;
         executeTurn(player);
         terminateTurn(player);
     }
 
     private void executeTurn(TakeGamePlayer player) {
-        while (playerImpl(player)){
-            System.out.println("Ungueltiger Zug!");
+        do{
+            turn =  player.doTurn(stones);
         }
+        while (invalidTurn(player));
     }
 
-    private boolean playerImpl(TakeGamePlayer player) {
-        turn =  player.doTurn(stones);
-        return ! isValid();
+    private boolean invalidTurn(TakeGamePlayer player) {
+        if(isValid()) return false;
+        System.out.println("Ungueltiger Zug!");
+        return true;
     }
-
-
-
-
-
-
 
     private void terminateTurn(TakeGamePlayer player) { // Integratiom
         updateGameState();
