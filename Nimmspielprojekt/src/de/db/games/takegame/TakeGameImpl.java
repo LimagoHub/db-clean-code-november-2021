@@ -8,6 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ *
+ */
 public class TakeGameImpl implements Game {
 
 
@@ -31,8 +34,10 @@ public class TakeGameImpl implements Game {
         }
     }
 
+    /*
 
-    private void executeTurnForPlayer(TakeGamePlayer player) {
+     */
+    private void executeTurnForPlayer(TakeGamePlayer player) { // sdfsdf
         currentPlayer = player;
         executeSingleTurn();
     }

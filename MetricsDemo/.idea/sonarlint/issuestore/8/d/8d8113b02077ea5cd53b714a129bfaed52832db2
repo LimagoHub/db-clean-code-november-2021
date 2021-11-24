@@ -1,0 +1,209 @@
+
+9
+java:S1118ªK"Hide this public constructor.(‹ï©¯ûÿÿÿÿ
+Q
+java:S1133î"5Do not forget to remove this deprecated code someday.(ƒô¶Êıÿÿÿÿ
+Q
+java:S1133¬"5Do not forget to remove this deprecated code someday.(´´×şÿÿÿÿ
+L
+java:S1133ë"5Do not forget to remove this deprecated code someday.(”Ùöó
+Q
+java:S1133©"5Do not forget to remove this deprecated code someday.(˜•æˆûÿÿÿÿ
+Q
+java:S1133ç"5Do not forget to remove this deprecated code someday.(ºÌ²Éùÿÿÿÿ
+Q
+java:S1133¥"5Do not forget to remove this deprecated code someday.(”Æüşÿÿÿÿ
+Q
+java:S1133È"5Do not forget to remove this deprecated code someday.(Ì°ìôûÿÿÿÿ
+Q
+java:S1133§"5Do not forget to remove this deprecated code someday.(ÿğ˜¶ûÿÿÿÿ
+Q
+java:S1133è"5Do not forget to remove this deprecated code someday.(‚»Ü€ûÿÿÿÿ
+=
+java:S1168Õ
+"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168å
+"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168õ
+"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168…"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168•"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168¥"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168µ"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168Å"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168Û"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168°"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168Ú"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168„"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168®"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168Ø"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168‚"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168¬"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168Ö"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168Š"&Return an empty array instead of null.(¥¹ï
+Q
+java:S1133«"5Do not forget to remove this deprecated code someday.(ğÃ±”ÿÿÿÿÿ
+;
+java:S1872©"Use "isAssignableFrom" instead.(¦—”Êüÿÿÿÿ
+E
+java:S1905Ó&")Remove this unnecessary cast to "Object".(½…ôÉüÿÿÿÿ
+Q	java:S125Ê("<This block of commented-out lines of code should be removed.(½·ˆ`
+n
+java:S3776ë("RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(“¬éŸÿÿÿÿÿ
+@
+java:S1905Õ)")Remove this unnecessary cast to "Object".(Óè»´
+Q
+java:S1133é)"5Do not forget to remove this deprecated code someday.(¦Ç™¨üÿÿÿÿ
+@
+java:S1905ê)")Remove this unnecessary cast to "Object".(”Èú—
+L
+java:S1133ş)"5Do not forget to remove this deprecated code someday.(Äé¥
+?
+java:S1905ÿ)")Remove this unnecessary cast to "Object".(õ……x
+L
+java:S1133“*"5Do not forget to remove this deprecated code someday.(æŞúÔ
+@
+java:S1905”*")Remove this unnecessary cast to "Object".(‰ßõÆ
+K
+java:S1133¨*"5Do not forget to remove this deprecated code someday.(ïé±k
+E
+java:S1905©*")Remove this unnecessary cast to "Object".(‘¿ÑÂùÿÿÿÿ
+L
+java:S1133½*"5Do not forget to remove this deprecated code someday.(¥ªáÇ
+@
+java:S1905¾*")Remove this unnecessary cast to "Object".(ÄÔ¢
+K
+java:S1133Ò*"5Do not forget to remove this deprecated code someday.(ùŞë4
+E
+java:S1905Ó*")Remove this unnecessary cast to "Object".(¤êıÈøÿÿÿÿ
+L
+java:S1133ç*"5Do not forget to remove this deprecated code someday.(ªğÁ¡
+E
+java:S1905è*")Remove this unnecessary cast to "Object".(Íóò€ıÿÿÿÿ
+Q
+java:S1133ü*"5Do not forget to remove this deprecated code someday.(¾É©¤ùÿÿÿÿ
+@
+java:S1905ı*")Remove this unnecessary cast to "Object".(“Ãè‚
+Q
+java:S1133’+"5Do not forget to remove this deprecated code someday.(íš„“ıÿÿÿÿ
+@
+java:S1905“+")Remove this unnecessary cast to "Object".(çĞÚ
+@
+java:S1905¦+")Remove this unnecessary cast to "Object".(”Èú—
+?
+java:S1905¹+")Remove this unnecessary cast to "Object".(õ……x
+@
+java:S1905Ì+")Remove this unnecessary cast to "Object".(‰ßõÆ
+E
+java:S1905ß+")Remove this unnecessary cast to "Object".(‘¿ÑÂùÿÿÿÿ
+@
+java:S1905ò+")Remove this unnecessary cast to "Object".(ÄÔ¢
+E
+java:S1905…,")Remove this unnecessary cast to "Object".(¤êıÈøÿÿÿÿ
+E
+java:S1905˜,")Remove this unnecessary cast to "Object".(Íóò€ıÿÿÿÿ
+@
+java:S1905«,")Remove this unnecessary cast to "Object".(“Ãè‚
+@
+java:S1905¿,")Remove this unnecessary cast to "Object".(çĞÚ
+=
+java:S1168É="&Return an empty array instead of null.(¥¹ï
+=
+java:S1168ñ="&Return an empty array instead of null.(¥¹ï
+=
+java:S1168™>"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168Á>"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168é>"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168‘?"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168¹?"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168á?"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168”@"&Return an empty array instead of null.(¥¹ï
+;
+java:S1168ğE"$Return an empty map instead of null.(¥¹ï
+=
+java:S1168“F"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168¨F"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168½F"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168ÒF"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168çF"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168üF"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168‘G"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168¦G"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168¾G"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168ÔG"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168íG"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168ƒH"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168œH"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168²H"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168ËH"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168áH"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168úH"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168I"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168©I"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168¿I"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168ØI"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168îI"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168¨J"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168¾J"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168ûJ"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168•K"&Return an empty array instead of null.(¥¹ï
+h
+java:S1192ı"LDefine a constant instead of duplicating this literal ", Length: " 12 times.(¹ÿò‹üÿÿÿÿ
+`
+java:S1192õ"IDefine a constant instead of duplicating this literal "Index: " 13 times.(¾à²Ã
+g
+java:S2259‡)"KA "NullPointerException" could be thrown; "clonedIndices" is nullable here.(‰ÙÄöÿÿÿÿÿ
+Z
+java:S2259ƒ)"CA "NullPointerException" could be thrown; "array" is nullable here.(¶ñ¥¢
+g
+java:S2259ó("KA "NullPointerException" could be thrown; "clonedIndices" is nullable here.(ü¬‘…úÿÿÿÿ
+_
+java:S2259‹&"CA "NullPointerException" could be thrown; "array" is nullable here.(ç÷®şÿÿÿÿ

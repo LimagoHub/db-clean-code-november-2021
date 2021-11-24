@@ -1,0 +1,15 @@
+
+@
+java:S1197"*Move the array designators [] to the type.(Û¯Î
+Q
+java:S1128"/Remove this unused import 'java.time.Duration'.(ëá¯‰üÿÿÿÿ8…•„èÔ/
+P
+java:S1128".Remove this unused import 'java.time.Instant'.(Â‚éñÿÿÿÿÿ8†•„èÔ/
+c
+java:S1128"ARemove this unused import 'java.util.concurrent.ExecutorService'.(æ÷–£ùÿÿÿÿ8†•„èÔ/
+]
+java:S1128";Remove this unused import 'java.util.concurrent.Executors'.(äåÒÛÿÿÿÿÿ8†•„èÔ/
+W
+java:S1128":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™ş8†•„èÔ/
+@
+java:S1068"*Remove this unused "random" private field.(Ó½ñ

@@ -1,0 +1,12 @@
+
+W
+java:S1854"5Remove this useless assignment to local variable "s".(ç†ñéøÿÿÿÿ8¤â¤‘Õ/
+g
+java:S1858"E"sb" is already a string, there's no need to call "toString()" on it.(ç†ñéøÿÿÿÿ8æÊÁ’Õ/
+H
+java:S1481"&Remove this unused "s" local variable.(ç†ñéøÿÿÿÿ8¦â¤‘Õ/
+N	java:S106"9Replace this use of System.out or System.err by a logger.(—½œà
+>
+java:S1643"Use a StringBuilder instead.(ü¸„üøÿÿÿÿ8ƒÅÂ’Õ/
+0
+java:S1220""Move this file to a named package.

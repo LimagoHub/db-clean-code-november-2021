@@ -1,0 +1,98 @@
+
+4
+java:S1118K"Hide this public constructor.(Ú¦œÚ
+L
+java:S1133ñ"5Do not forget to remove this deprecated code someday.(Ÿî‡‰
+n
+java:S3776¦"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(íÃèéúÿÿÿÿ
+n
+java:S3776Î	"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(±ğÅÿûÿÿÿÿ
+Q
+java:S1133±"5Do not forget to remove this deprecated code someday.(½áË¯ùÿÿÿÿ
+`
+java:S3358€"DExtract this nested ternary operation into an independent statement.(™Íèøÿÿÿÿ
+`
+java:S3358œ"DExtract this nested ternary operation into an independent statement.(„æ”úÿÿÿÿ
+L
+java:S1133Ã"5Do not forget to remove this deprecated code someday.(Ì’Ã€
+=
+java:S1110Ï"!Remove these useless parentheses.(°ÔÊ­üÿÿÿÿ
+Q
+java:S1133ú"5Do not forget to remove this deprecated code someday.(Ä‚Ãüÿÿÿÿ
+n
+java:S3776Ô"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(ëÎ¥İøÿÿÿÿ
+Q
+java:S1133Ô"5Do not forget to remove this deprecated code someday.(ëÎ¥İøÿÿÿÿ
+i
+java:S3776¢"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ÛÊÔ†
+i
+java:S3776«"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(ùõ‡Û
+Q
+java:S1119³";Refactor the code to remove this label and the need for it.(àÏÅ)
+n
+java:S3776“"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ô«³Äşÿÿÿÿ
+i
+java:S3776“*"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(šõş©
+8
+java:S1659”*"!Declare "min" on a separate line.(½ı¸ì
+Q
+java:S1133­."5Do not forget to remove this deprecated code someday.(Àé¤€úÿÿÿÿ
+Q
+java:S1133¤/"5Do not forget to remove this deprecated code someday.(—¿â¨üÿÿÿÿ
+L
+java:S1133ñ/"5Do not forget to remove this deprecated code someday.(ÃÚ…¦
+Q
+java:S1133á2"5Do not forget to remove this deprecated code someday.(ÖËìƒùÿÿÿÿ
+i
+java:S3776 4"RRefactor this method to reduce its Cognitive Complexity from 45 to the 15 allowed.(Üú¤ï
+T
+java:S1854€5"=Remove this useless assignment to local variable "tempIndex".(…İ­
+Q
+java:S1133…6"5Do not forget to remove this deprecated code someday.(†“¼åüÿÿÿÿ
+L
+java:S1133ª7"5Do not forget to remove this deprecated code someday.(À—èš
+=
+java:S1168¿:"&Return an empty array instead of null.(¥¹ï
+n
+java:S3776ÿ;"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(¾‡­ùÿÿÿÿ
+=
+java:S1168‚<"&Return an empty array instead of null.(¥¹ï
+:
+java:S1659æ="#Declare "start" on a separate line.(˜©ùÌ
+=
+java:S1168ß="&Return an empty array instead of null.(¥¹ï
+n
+java:S3776‹>"RRefactor this method to reduce its Cognitive Complexity from 53 to the 15 allowed.(‚¡Ø”ÿÿÿÿÿ
+:
+java:S1659™>"#Declare "start" on a separate line.(˜©ùÌ
+=
+java:S1168‘>"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168¸E"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168ĞE"&Return an empty array instead of null.(¥¹ï
+=
+java:S1168šF"&Return an empty array instead of null.(¥¹ï
+L
+java:S1133áF"5Do not forget to remove this deprecated code someday.(·¬¾£
+p
+java:S1192³"YDefine a constant instead of duplicating this literal "Strings must not be null" 4 times.(íù®µ
+t	java:S135â"YReduce the total number of break and continue statements in this loop to use at most one.(ğÑ×Øøÿÿÿÿ
+o	java:S135¶"YReduce the total number of break and continue statements in this loop to use at most one.(ÍØÊÔ
+o	java:S135ÂE"YReduce the total number of break and continue statements in this loop to use at most one.(£Ç²¤
+s	java:S127­"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ò¾ì øÿÿÿÿ
+s	java:S127±*"XRefactor the code in order to not assign to this loop counter from within the loop body.(ÄÕ¬¸ûÿÿÿÿ
+s	java:S127·*"XRefactor the code in order to not assign to this loop counter from within the loop body.(ÄÕ¬¸ûÿÿÿÿ
+s	java:S127ƒF"XRefactor the code in order to not assign to this loop counter from within the loop body.(‚Ï¦¨ûÿÿÿÿ
+s	java:S127ÒH"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ò¾ì øÿÿÿÿ
+l	java:S117•"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í›ì€ûÿÿÿÿ
+l	java:S117˜"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ½¯Íÿÿÿÿÿ
+g	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªã”Ô
+U
+java:S1155«4">Use isEmpty() to check whether the collection is empty or not.(ó¾ ¶
+S
+java:S4973è"<Strings and Boxed types should be compared using "equals()".(âş±ù
+S
+java:S4973Å"<Strings and Boxed types should be compared using "equals()".(âş±ù
+]
+java:S2259òA"AA "NullPointerException" could be thrown; "str" is nullable here.(‡´çüÿÿÿÿ

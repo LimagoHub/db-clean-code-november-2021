@@ -1,0 +1,9 @@
+
+a	java:S112¬"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ
+a	java:S112Å"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ
+—
+java:S1186d"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(´Ë¯Ç
+3
+java:S1118d"Hide this public constructor.(´Ë¯Ç
+t
+java:S11716"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ

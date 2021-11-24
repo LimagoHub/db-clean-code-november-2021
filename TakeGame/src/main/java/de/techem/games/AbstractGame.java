@@ -18,13 +18,13 @@ public abstract class AbstractGame<BOARD,TURN> implements Game {
 
 	
 	private static final String GAME_OVER_MESSAGE = "%s hat verloren";
-	private static final String INVALID_TURN = "Ungueltiger Zug";
+	private static final String INVALID_TURN = "Ungültiger Zug";
 	
 	private final Writer writer;
 	
 	protected BOARD board;
 	protected TURN turn;
-	private List<GamePlayer<BOARD, TURN>> players = new ArrayList<>();
+	private final List<GamePlayer<BOARD, TURN>> players = new ArrayList<>();
 	private GamePlayer<BOARD, TURN> currentPlayer;
 	
 	
@@ -36,7 +36,7 @@ public abstract class AbstractGame<BOARD,TURN> implements Game {
 		return currentPlayer;
 	}
 
-	// kommentar
+	// Kommentar
 	protected void setCurrentPlayer(GamePlayer<BOARD, TURN>currentPlayer) {
 		this.currentPlayer = currentPlayer;
 	}
@@ -44,7 +44,7 @@ public abstract class AbstractGame<BOARD,TURN> implements Game {
 	
 	
 	protected List<GamePlayer<BOARD, TURN>> getPlayers() {
-		
+
 		return Collections.unmodifiableList(players);
 	}
 	

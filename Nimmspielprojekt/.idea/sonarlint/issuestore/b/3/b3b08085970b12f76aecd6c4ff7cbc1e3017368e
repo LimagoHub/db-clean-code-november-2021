@@ -1,0 +1,15 @@
+
+O
+java:S5993"9Change the visibility of this constructor to "protected".(¼¶ê¸
+^	java:S119
+"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(ï¸¾Ú
+^	java:S119
+"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(ï¸¾Ú
+@
+java:S1068"*Remove this unused "writer" private field.(˜²—
+D
+java:S1068")Remove this unused "board" private field.(åÌ–®şÿÿÿÿ
+=
+java:S1068"(Remove this unused "turn" private field.(ÚÊÄ(
+F
+java:S1068"1Remove this unused "currentPlayer" private field.(»Ëİ0

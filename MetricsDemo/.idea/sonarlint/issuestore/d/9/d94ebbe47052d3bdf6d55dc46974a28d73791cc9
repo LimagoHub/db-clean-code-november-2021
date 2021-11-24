@@ -1,0 +1,12 @@
+
+8
+java:S1118Q"Hide this public constructor.(„……şÿÿÿÿ
+n
+java:S3776Š"RRefactor this method to reduce its Cognitive Complexity from 91 to the 15 allowed.(””´ëøÿÿÿÿ
+Q
+java:S1133"5Do not forget to remove this deprecated code someday.(äù±‡şÿÿÿÿ
+i
+java:S3776·"RRefactor this method to reduce its Cognitive Complexity from 79 to the 15 allowed.(¯§“Æ
+o
+java:S1192¹"XDefine a constant instead of duplicating this literal " is not a valid number." 4 times.(İÔÇı
+l	java:S117’"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾˜¬İúÿÿÿÿ
