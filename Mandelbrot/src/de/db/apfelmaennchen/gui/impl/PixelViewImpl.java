@@ -1,11 +1,8 @@
 package de.db.apfelmaennchen.gui.impl;
 
 import de.db.apfelmaennchen.gui.PixelView;
-import de.db.apfelmaennchen.gui.converter.PixelToComplexConverter;
-import de.db.apfelmaennchen.gui.converter.impl.PixelToComplexConverterImpl;
 import de.db.apfelmaennchen.gui.presenter.FunctionPresenter;
-import de.db.apfelmaennchen.math.Komplex;
-import de.db.apfelmaennchen.services.ComplexFunction;
+
 
 
 import java.awt.Frame;
@@ -16,12 +13,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
-import java.time.Duration;
-import java.time.Instant;
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 
 
 public class PixelViewImpl extends Frame implements PixelView {
