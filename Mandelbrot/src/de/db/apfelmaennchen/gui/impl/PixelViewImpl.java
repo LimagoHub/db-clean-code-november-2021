@@ -1,5 +1,6 @@
 package de.db.apfelmaennchen.gui.impl;
 
+import de.db.apfelmaennchen.gui.PixelView;
 import de.db.apfelmaennchen.gui.converter.PixelToComplexConverter;
 import de.db.apfelmaennchen.gui.converter.impl.PixelToComplexConverterImpl;
 import de.db.apfelmaennchen.math.Komplex;
@@ -22,7 +23,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
-public class PixelViewImpl extends Frame {
+public class PixelViewImpl extends Frame implements PixelView {
 
 	private final transient Logger logger = Logger.getLogger(getClass().getName());
 	private static final int SIZE = 512;
