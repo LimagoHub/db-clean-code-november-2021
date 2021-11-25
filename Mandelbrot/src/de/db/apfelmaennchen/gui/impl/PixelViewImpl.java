@@ -1,4 +1,4 @@
-package de.db.apfelmaennchen.gui;
+package de.db.apfelmaennchen.gui.impl;
 
 import de.db.apfelmaennchen.gui.converter.PixelToComplexConverter;
 import de.db.apfelmaennchen.gui.converter.impl.PixelToComplexConverterImpl;

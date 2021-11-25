@@ -4,5 +4,20 @@ import de.db.apfelmaennchen.gui.presenter.FunctionPresenter;
 
 public interface PixelView {
 
-    void setFraktalPresenter(FunctionPresenter functionPresenter);
+    void setFunctionPresenter(FunctionPresenter functionPresenter);
+
+    // Fenstergroesse und Breite
+    public int getImageSize();
+
+    // Zeichenfeld
+    public int[] getImageBuffer() ;
+
+    // Neuzeichnen
+    public void updateImage() ;
+
+
+    // Anzeigen und Schliessen
+    public void show();
+
+    public void close();
 }

@@ -1,6 +1,6 @@
 package de.db.apfelmaennchen.application;
 
-import de.db.apfelmaennchen.gui.PixelViewImpl;
+import de.db.apfelmaennchen.gui.impl.PixelViewImpl;
 import de.db.apfelmaennchen.gui.converter.PixelToComplexConverter;
 import de.db.apfelmaennchen.gui.converter.impl.PixelToComplexConverterImpl;
 import de.db.apfelmaennchen.services.ComplexFunction;
