@@ -1,4 +1,4 @@
-package de.db.apfelmaennchen;
+package de.db.apfelmaennchen.math;
 
 public class Komplex {
 
@@ -10,6 +10,8 @@ public class Komplex {
 	public Komplex(double real) {
 		this(real,0);
 	}
+
+
 	public Komplex(double real, double imag) {
 		this.real = real;
 		this.imag = imag;
