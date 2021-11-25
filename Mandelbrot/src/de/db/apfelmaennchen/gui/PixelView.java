@@ -5,6 +5,7 @@ import de.db.apfelmaennchen.gui.presenter.FunctionPresenter;
 public interface PixelView {
 
     void setFunctionPresenter(FunctionPresenter functionPresenter);
+    FunctionPresenter getFunctionPresenter();
 
     // Fenstergroesse und Breite
     public int getImageSize();

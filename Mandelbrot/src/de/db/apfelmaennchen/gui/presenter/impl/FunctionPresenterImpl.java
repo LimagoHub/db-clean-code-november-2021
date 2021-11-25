@@ -11,11 +11,15 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class FunctionPresenterImpl implements FunctionPresenter {
 
+    private ExecutorService service;
     private final Deque<PixelToComplexConverter> stack = new ArrayDeque<>();
     private final transient Logger logger = Logger.getLogger(getClass().getName());
     private final transient ComplexFunction complexFunction;
@@ -57,22 +61,48 @@ public class FunctionPresenterImpl implements FunctionPresenter {
     }
 
     private void fillBufferedImage() {
-        Instant start = Instant.now();
-        for(int x = 0 ; x < pixelView.getImageSize() ; x ++ ){
-            for(int y = 0; y < pixelView.getImageSize(); y ++) {
-                int i = complexFunction.apply(converter.convertCoordinatesToComplexNumber(x, y, pixelView.getImageSize()));
-
-                int rot = (i * 3) % 256;
-                int gruen = (i * 5) % 256;
-                int blau = (i * 11) % 256;
-                int farbe = rot << 16 | gruen << 8 | blau;
-                // image.setRGB(x,y, farbe);
-                pixelView.getImageBuffer()[y * pixelView.getImageSize() + x] = farbe;
-            }
+        try {
+            fillBufferdImageImpl();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
+    }
+
+    private void fillBufferdImageImpl() throws InterruptedException {
+        Instant start = Instant.now();
+        service = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+        for(int y = 0 ; y < pixelView.getImageSize() ; y ++ ){
+            renderRowParallel(y);
+
+        }
+        service.shutdown();
+        service.awaitTermination(Long.MAX_VALUE, TimeUnit.DAYS);
+
         Instant ende = Instant.now();
         logger.log(Level.INFO , "Duration = {0}", Duration.between(start,ende).toMillis());
         pixelView.updateImage();
+    }
+
+    private void renderRowParallel(final int row) throws InterruptedException {
+
+
+        service.execute(()->calculateColumn(row));
+
+    }
+
+    private void calculateColumn(int y) {
+        int offset = y * pixelView.getImageSize();
+        for(int x = 0; x < pixelView.getImageSize(); x ++) {
+            int i = complexFunction.apply(converter.convertCoordinatesToComplexNumber(x, y, pixelView.getImageSize()));
+            //int i = (int) Thread.currentThread().getId();
+            int rot = (i * 3) % 256;
+            int gruen = (i * 5) % 256;
+            int blau = (i * 11) % 256;
+            int farbe = rot << 16 | gruen << 8 | blau;
+            // image.setRGB(x,y, farbe);
+
+            pixelView.getImageBuffer()[offset + x] = farbe;
+        }
     }
 
 }
