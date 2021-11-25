@@ -23,15 +23,15 @@ public class Mandelbrot {
 	}
 	
 	public int iterate(Komplex c) {
-		int retval = 0;
+		int result = 0;
 		Komplex z = new Komplex();
 		while(z.abs() < 2.0 ) {
 			z.malIstGleich(z);
 			z.plusIstGleich(c);
-			retval ++;
-			if (retval > MAXITER) return 0;
+			result ++;
+			if (result > MAXITER) return 0;
 		}
-		return retval;
+		return result;
 	}
 
 	
